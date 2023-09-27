@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  /* typograph */
+  font-size: 62.5%;
+  /* colors */
+  --base-gray: #FAFAFA;
+  --base-gray-200: #E3E1E4;
+  --base-gray-300: #75747A;
+  --base-gray-400: #2F2F33;
+  --base-gray-500: #2F2F33;
+
+  --brand-purple: #685ED9;
+  --brand-purple-dark: #4439C7;
+  --brand-gradient-light: linear-gradient(77deg, #4453B2 -0.41%, #502C9E 98.95%);
+  --brand-gradient-dark: linear-gradient(180deg, #0F0A31 0%, #3F347E 100%);
+
+  --rating-yellow-light: #FAF2E7;
+  --rating-yellow: #F5D9AD;
+  --rating-gradient-yellow: linear-gradient(108deg, #F9D399 9.14%, #D4983E 93.12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+body, input, label, button {
+  font-family: 'Inter', sans-serif;
+}
