@@ -11,15 +11,18 @@
 </head>
 <body>
   <div id="page">
-    <div id="first-screen">
+    <!-- primeira tela -->
+    <div id="first-screen" class="hide">
       <div class="card">
         <div class="product">
           <img src="assets/smartwatch.svg" alt="Smartwatch Amazfit">
         </div>
         <div class="content">
           <div class="review">
-            <h1>Avalie o produto</h1>
-            <p>O que você achou do produto <span>Smartwatch Amazfit Bip U Pro</span>?</p>
+            <div class="tittle">
+              <h1>Avalie o produto</h1>
+              <p>O que você achou do produto <span>Smartwatch Amazfit Bip U Pro</span>?</p>
+            </div>
             <div class="stars">
               <i class="ph-fill ph-star" ></i>
               <i class="ph-fill ph-star"></i>
@@ -34,6 +37,28 @@
           </div>
           <button class="button">
             Confirmar
+            <i class="ph ph-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- segunda tela -->
+    <div id="second-screen">
+      <div class="card">
+        <div class="product">
+          <i id="goback" class="ph ph-arrow-left"></i>
+          <img src="assets/smartwatch.svg" alt="Smartwatch Amazfit">
+        </div>
+        <div class="content">
+          <div class="comment">
+            <div class="tittle">
+              <h1>Deixe um comentário</h1>
+              <p>Conte sobre o motivo da sua avaliação</p>
+            </div>
+          </div>
+          <textarea name="" id="comment-text" placeholder="Escreva aqui seu comentário..."></textarea>
+          <button class="button">
+            Enviar
             <i class="ph ph-arrow-right"></i>
           </button>
         </div>
