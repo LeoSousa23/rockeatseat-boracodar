@@ -212,16 +212,16 @@ body, input, label, button, textarea {
 
 /* animacoes */
 #first-screen .tittle {
-  animation: textDown 1s ease-in-out;
+  animation: textDown .7s ease-in-out;
 }
 
 #first-screen .stars, 
 #first-screen .helper-text {
-  animation: expanded 1s ease-in-out;
+  animation: expanded .7s ease-in-out;
 }
 
 #first-screen .button {
-  animation: buttonUp 1s ease-in-out;
+  animation: buttonUp .7s ease-in-out;
 }
 
 @keyframes textDown {
