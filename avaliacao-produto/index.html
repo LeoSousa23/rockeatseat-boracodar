@@ -7,12 +7,13 @@
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   <!-- js -->
+  <script defer src="js/script.js"></script>
   <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
   <div id="page">
     <!-- primeira tela -->
-    <div id="first-screen" class="hide">
+    <div id="first-screen">
       <div class="card">
         <div class="product">
           <img src="assets/smartwatch.svg" alt="Smartwatch Amazfit">
@@ -35,7 +36,7 @@
               <span>Ótimo</span>
             </div>
           </div>
-          <button class="button">
+          <button id="btn-continue" class="button">
             Confirmar
             <i class="ph ph-arrow-right"></i>
           </button>
@@ -43,10 +44,10 @@
       </div>
     </div>
     <!-- segunda tela -->
-    <div id="second-screen">
+    <div id="second-screen" class="hide">
       <div class="card">
         <div class="product">
-          <i id="goback" class="ph ph-arrow-left"></i>
+          <i id="togoback" class="ph ph-arrow-left"></i>
           <img src="assets/smartwatch.svg" alt="Smartwatch Amazfit">
         </div>
         <div class="content">
@@ -65,9 +66,5 @@
       </div>
     </div>
   </div>
-  <!-- icons -->
-  <!-- <i class="ph ph-arrow-left"></i> -->
-  <!-- <i class="ph ph-arrow-right"></i> -->
-  <!-- <i class="ph-fill ph-star"></i> -->
 </body>
 </html>
