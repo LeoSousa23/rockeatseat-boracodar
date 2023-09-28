@@ -48,14 +48,13 @@ body, input, label, button, textarea {
 
 /* card */
 .card {
-  /* min-width: 37rem; */
-  /* max-width: 41rem; */
-  width: 41rem;
-}
-
-/* first screen */
-.first-screen {
-  height: 100%;
+  min-width: 30rem;
+  max-width: 41rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.6rem 1.3rem 0 rgba(20, 17, 59, 0.25), 
+              0 2.4rem 2.4rem 0 rgba(20, 17, 59, 0.21),
+              0 5.4rem 3.2rem 0 rgba(20, 17, 59, 0.13),
+              0 9.6rem 3.8rem 0 rgba(20, 17, 59, 0.04);
 }
 
 /* product */
@@ -73,7 +72,7 @@ body, input, label, button, textarea {
   transform: translateX(-50%);
 }
 
-#goback {
+#togoback {
   cursor: pointer;
   font-size: 2.4rem;
 
@@ -177,6 +176,10 @@ body, input, label, button, textarea {
 
 #comment-text::placeholder {
   font-size: 1.6rem;
+}
+
+#comment-text:focus {
+  outline: .2rem solid var(--brand-purple);
 }
 
 /* button */
