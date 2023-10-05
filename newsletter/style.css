@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@400,500;0,700;1,400&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --base-gray-800: #202024;
+  --base-black: #09090a;
+  --base-white: #ffffff;
+  --base-gray: #c4c4cc;
+  --purple-linear: linear-gradient(90deg, #996DFF 0%, #C7AFFF 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, button, input, label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+}
+
+body {
+  color: var(--base-white);
+  background-color: var(--base-black);
+}
+
+p {
+  color: var(--base-gray);
+}
+
+#page {
+  min-height: 100vh;
+  padding: 8rem 4rem;
+}
+
+.background {
+  width: 50vh;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.background img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+}
+
+#content {
+  max-width: 48rem;
+}
+
+#content h2 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  background: var(--purple-linear);
+  color: transparent;
+  background-clip:text;
+  -webkit-background-clip: text;
+}
+
+#content h1 {
+  font-size: 4.6rem;
+  margin-block: 1.6rem 3.2rem;
+}
+
+#content p {
+  font-size: 2rem;
+}
+
+#content form {
+  margin-top: 3.2rem;
+  display: flex;
+  gap: .8rem;
+}
+
+#content input {
+  width: 100%;
+  padding: 1.6rem 1.2rem;
+  border-radius: .5rem;
+  border: none;
+  color: var(--base-white);
+  background-color: var(--base-gray-800);
+}
+
+#content input::placeholder {
+  font-size: 1.6rem;
+}
+
+#content input:focus {
+  outline: .2rem solid #996DFF;
+}
+
+#content button {
+  cursor: pointer;
+  padding: 1.6rem;
+  display: flex;
+  font-weight: 700;
+  align-items: center;
+  gap: .8rem;
+  border: none;
+  border-radius: .5rem;
+  background: var(--purple-linear);
+}
+
+#content button span {
+  display: none;
+}
+
+#cardgroup {
+  display: grid;
+  gap: 4rem;
+}
+
+#cardgroup figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#cardgroup figcaption h3 {
+  margin-block: 1.6rem .8rem;
+}
+
+#cardgroup figcaption p {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 600px) {
+  .background {
+    width: 50vw;
+    top: 0;
+    left: 50%;
+  }
+
+  #content button span {
+    display: block;
+    white-space: nowrap;
+  }
+
+  #cardgroup {
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  #page {
+    padding: 16rem 8rem 8rem;
+  }
+}
+
+@media (min-width: 910px) {
+  #page {
+    padding: 16rem 11rem 8rem;
+  }
+}
