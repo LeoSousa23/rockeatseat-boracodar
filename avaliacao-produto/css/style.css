@@ -130,7 +130,7 @@ body, input, label, button, textarea {
   }
 }
 
-.stars {
+/* .stars {
   display: flex;
   justify-content: space-between;
 
@@ -151,6 +151,43 @@ body, input, label, button, textarea {
   & i .selected {
     color: var(--rating-gradient-yellow);
   }
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stars-widget input {
+  display: none;
+}
+
+.stars-widget label {
+  margin-inline: .5rem;
+  padding: .8rem;
+  cursor: pointer;
+  font-size: 3.2rem;
+  border-radius: 50%;
+  color: var(--base-gray-200);
+  float: right;
+  transition: all .3s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: var(--rating-yellow);
+  background-color: var(--rating-yellow-light);
+}
+
+input:checked ~ label {
+  color: var(--rating-yellow);
+}
+
+input#star-5:checked ~ label {
+  color: var(--rating-yellow);
+  text-shadow: 0 0 2rem var(--rating-yellow);
 }
 
 .helper-text {
