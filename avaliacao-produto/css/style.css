@@ -63,14 +63,15 @@ body, input, label, button, textarea {
   position: relative;
   border-radius: 2rem 2rem 0 0;
   background: var(--brand-gradient-light);
+
+  & img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
-.product img {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
 #togoback {
   cursor: pointer;
@@ -97,10 +98,10 @@ body, input, label, button, textarea {
 /* review */
 .review {
   margin-bottom: 4rem;
-}
 
-.review .tittle p {
-  margin-block: .8rem 3.2rem;
+  & .tittle p {
+    margin-block: .8rem 3.2rem;
+  }
 }
 
 /* comment */
@@ -111,45 +112,45 @@ body, input, label, button, textarea {
 /* tittle */
 .tittle {
   text-align: center;
-}
 
-.tittle h1 {
-  color: var(--base-gray-500);
-  font-size: 2rem;
-  line-height: 130%;
-}
+  & h1 {
+    color: var(--base-gray-500);
+    font-size: 2rem;
+    line-height: 130%;
+  }
 
-.tittle p {
-  line-height: 150%;
-  color: var(--base-gray-400);
-}
+  & p {
+    line-height: 150%;
+    color: var(--base-gray-400);
+  }
 
-.tittle span {
-  line-height: 150%;
-  color: var(--brand-purple-dark);
+  & span {
+    line-height: 150%;
+    color: var(--brand-purple-dark);
+  }
 }
 
 .stars {
   display: flex;
   justify-content: space-between;
-}
 
-.stars i {
-  padding: .8rem;
-  cursor: pointer;
-  font-size: 3.2rem;
-  border-radius: 50%;
-  color: var(--base-gray-200);
-  transition: .3s ease;
-}
+  & i {
+    padding: .8rem;
+    cursor: pointer;
+    font-size: 3.2rem;
+    border-radius: 50%;
+    color: var(--base-gray-200);
+    transition: .3s ease;
+  }
 
-.stars i:hover {
-  color: var(--rating-yellow);
-  background-color: var(--rating-yellow-light);
-}
+  & i:hover {
+    color: var(--rating-yellow);
+    background-color: var(--rating-yellow-light);
+  }
 
-.stars i .selected {
-  color: var(--rating-gradient-yellow);
+  & i .selected {
+    color: var(--rating-gradient-yellow);
+  }
 }
 
 .helper-text {
