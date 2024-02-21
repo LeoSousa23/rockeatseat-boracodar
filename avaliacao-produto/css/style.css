@@ -130,29 +130,6 @@ body, input, label, button, textarea {
   }
 }
 
-/* .stars {
-  display: flex;
-  justify-content: space-between;
-
-  & i {
-    padding: .8rem;
-    cursor: pointer;
-    font-size: 3.2rem;
-    border-radius: 50%;
-    color: var(--base-gray-200);
-    transition: .3s ease;
-  }
-
-  & i:hover {
-    color: var(--rating-yellow);
-    background-color: var(--rating-yellow-light);
-  }
-
-  & i .selected {
-    color: var(--rating-gradient-yellow);
-  }
-} */
-
 .container {
   display: flex;
   align-items: center;
